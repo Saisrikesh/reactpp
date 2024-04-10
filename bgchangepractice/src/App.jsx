@@ -7,36 +7,41 @@ function App() {
 
   return (
     <>
-      <div 
-      className='d-flex justify-content-center align-items-end'
-      style={{backgroundColor: color, width: '100vw', height: '100vh'}}>
+    <div
+    className='d-flex justify-content-center align-items-end'
+    style={{backgroundColor: color, width: '100vw', height:'100vh'}}>
 
-        <div
-        className='d-flex justify-content-between'
-        style={{backgroundColor: 'black', margin: '50px', width:'100vw'} }>
+      <div
+      style={{backgroundColor:'white', width: '100vw', padding: '10px', margin: '10px'}} 
+      className='d-flex justify-content-between rounded'>
 
-          <button
-          onClick={() => setColor('red')}
-          style={{backgroundColor: 'red', color: 'white'}}>red
-          </button>
+        <button
+        onClick={() => setColor('green')}
+        style={{backgroundColor: "green", color: "white"}}>green</button>
 
-          <button
-          onClick={() => setColor('yellow')}
-          style={{backgroundColor: 'yellow', color: 'white'}}>yellow
-          </button>
+        <button
+        onClick={() => setColor('red')}
+        style={{backgroundColor: "red", color: "white"}}>red</button>
 
-          <button
-          onClick={() => setColor('pink')}
-          style={{backgroundColor: 'pink', color: 'white'}}>pink
-          </button>
+        <button
+        onClick={() => setColor('blue')}
+        style={{backgroundColor: "blue", color: "white"}}>blue</button>
 
-          <button
-          onClick={() => setColor('green')}
-          style={{backgroundColor: 'green', color: 'white'}}>green
-          </button>
-          
-        </div>
+        <button
+        onClick={() => setColor('yellow')}
+        style={{backgroundColor: "yellow", color: "white"}}>yellow</button>
+
+        <button
+        onClick={() => setColor('purple')}
+        style={{backgroundColor: "purple", color: "white"}}>purple</button>
+
+        <button
+        onClick={() => setColor('pink')}
+        style={{backgroundColor: "pink", color: "white"}}>pink</button>
+
       </div>
+
+    </div>
     </>
   );
 }
